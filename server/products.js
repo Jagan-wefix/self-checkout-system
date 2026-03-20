@@ -3,7 +3,7 @@
 const now = () => new Date().toISOString();
 
 export const products = [
-  { id: 'PROD-0001', name: 'Wireless Headphones', description: 'Premium noise-cancelling wireless headphones', price: 1, stock: 10, rfid_uid: 'A7F45C21', paid: false, created_at: now() },
+  { id: 'PROD-0001', name: 'Wireless Headphones', description: 'Premium noise-cancelling wireless headphones', price: 11, stock: 10, rfid_uid: 'A7F45C21', paid: false, created_at: now() },
   { id: 'PROD-0002', name: 'Smart Watch', description: 'Fitness tracking smartwatch with heart rate monitor', price: 1, stock: 8, rfid_uid: 'B8G56D32', paid: false, created_at: now() },
   { id: 'PROD-0003', name: 'Bluetooth Speaker', description: 'Portable waterproof Bluetooth speaker', price: 1, stock: 15, rfid_uid: 'C9H67E43', paid: false, created_at: now() },
   { id: 'PROD-0004', name: 'Phone Charger', description: 'Fast charging USB-C wall adapter', price: 1, stock: 20, rfid_uid: 'D0I78F54', paid: false, created_at: now() },

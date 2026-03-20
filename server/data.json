@@ -4,7 +4,7 @@
       "id": "PROD-0001",
       "name": "Wireless Headphones",
       "description": "Premium noise-cancelling wireless headphones",
-      "price": 1,
+      "price": 11,
       "stock": 10,
       "rfid_uid": "A7F45C21",
       "paid": true,
@@ -52,6 +52,6 @@
     }
   ],
   "settings": {
-    "merchant_upi_id": "jaganwefix@oksbi"
+    "merchant_upi_id": "brindha31120@oksbi"
   }
 }

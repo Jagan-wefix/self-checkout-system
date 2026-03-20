@@ -47,7 +47,7 @@ export const Cart = ({ onBack, onProceedToPayment }: CartProps) => {
                     </button>
                   </div>
                   <div className="mt-3 pt-3 border-t border-gray-700">
-                    <p className="text-lg font-bold text-orange-400">${product.price.toFixed(2)}</p>
+                    <p className="text-lg font-bold text-orange-400">₹{product.price.toFixed(2)}</p>
                   </div>
                 </div>
               ))}
@@ -56,16 +56,16 @@ export const Cart = ({ onBack, onProceedToPayment }: CartProps) => {
             <div className="bg-gray-800 rounded-lg shadow-md p-4 mb-4">
               <div className="flex justify-between items-center mb-2">
                 <span className="text-gray-300">Subtotal</span>
-                <span className="font-semibold">${getTotalPrice().toFixed(2)}</span>
+                <span className="font-semibold">₹{getTotalPrice().toFixed(2)}</span>
               </div>
               <div className="flex justify-between items-center mb-2">
                 <span className="text-gray-300">Tax</span>
-                <span className="font-semibold">$0.00</span>
+                <span className="font-semibold">₹0.00</span>
               </div>
               <div className="pt-2 border-t border-gray-700">
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold">Total</span>
-                  <span className="text-xl font-bold text-orange-400">${getTotalPrice().toFixed(2)}</span>
+                  <span className="text-xl font-bold text-orange-400">₹{getTotalPrice().toFixed(2)}</span>
                 </div>
               </div>
             </div>
