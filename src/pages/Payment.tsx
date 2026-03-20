@@ -19,8 +19,8 @@ export const Payment = ({ onSuccess }: PaymentProps) => {
   const pollingRef = useRef<number | null>(null);
 
   useEffect(() => {
-    // Load the merchant UPI ID from the backend settings (configurable)
-    fetch(`${API_URL}/api/settings/merchant-upi`)
+    // Load the merchant UPI ID from config file
+    fetch('/config.json')
       .then(res => res.json())
       .then(data => {
         if (data && data.merchant_upi_id) {
@@ -28,7 +28,7 @@ export const Payment = ({ onSuccess }: PaymentProps) => {
         }
       })
       .catch(err => {
-        console.warn('Failed to fetch merchant UPI ID, using fallback', err);
+        console.warn('Failed to fetch UPI ID config, using fallback', err);
       });
 
     return () => {

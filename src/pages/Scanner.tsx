@@ -172,7 +172,6 @@ export const Scanner = ({ onBack }: ScannerProps) => {
             <li>Click "Start Scanning"</li>
             <li>Point camera at product QR code</li>
             <li>Product will be added to cart automatically</li>
-            <li>QR code format: PROD-XXXX</li>
           </ol>
         </div>
       </div>
