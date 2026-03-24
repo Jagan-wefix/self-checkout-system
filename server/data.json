@@ -3,7 +3,7 @@
     {
       "id": "PROD-0001",
       "name": "T-shirt",
-      "description": "Premium noise-cancelling wireless headphones",
+      "description": "Premium cotton T-shirt with a comfortable fit",
       "price": 11,
       "stock": 10,
       "rfid_uid": "A7F45C21",
@@ -13,7 +13,7 @@
     {
       "id": "PROD-0002",
       "name": "Pant",
-      "description": "Fitness tracking smartwatch with heart rate monitor",
+      "description": "Comfortable and durable cotton pants",
       "price": 1,
       "stock": 8,
       "rfid_uid": "B8G56D32",
@@ -23,7 +23,7 @@
     {
       "id": "PROD-0003",
       "name": "shirt",
-      "description": "Portable waterproof Bluetooth speaker",
+      "description": "Stylish and breathable cotton shirt",
       "price": 1,
       "stock": 15,
       "rfid_uid": "C9H67E43",
@@ -33,7 +33,7 @@
     {
       "id": "PROD-0004",
       "name": "Shoes",
-      "description": "Fast charging USB-C wall adapter",
+      "description": "Durable and comfortable running shoes",
       "price": 1,
       "stock": 20,
       "rfid_uid": "D0I78F54",
@@ -43,7 +43,7 @@
     {
       "id": "PROD-0005",
       "name": "Sneakers",
-      "description": "Adjustable aluminum laptop stand",
+      "description": "Trendy and versatile sneakers for everyday wear",
       "price": 1,
       "stock": 12,
       "rfid_uid": "E1J89G65",
@@ -52,6 +52,6 @@
     }
   ],
   "settings": {
-    "merchant_upi_id": "brindha31120@oksbi"
+    "merchant_upi_id": "jaganwefix@oksbi"
   }
 }
