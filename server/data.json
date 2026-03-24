@@ -2,7 +2,7 @@
   "products": [
     {
       "id": "PROD-0001",
-      "name": "Wireless Headphones",
+      "name": "T-shirt",
       "description": "Premium noise-cancelling wireless headphones",
       "price": 11,
       "stock": 10,
@@ -12,7 +12,7 @@
     },
     {
       "id": "PROD-0002",
-      "name": "Smart Watch",
+      "name": "Pant",
       "description": "Fitness tracking smartwatch with heart rate monitor",
       "price": 1,
       "stock": 8,
@@ -22,7 +22,7 @@
     },
     {
       "id": "PROD-0003",
-      "name": "Bluetooth Speaker",
+      "name": "shirt",
       "description": "Portable waterproof Bluetooth speaker",
       "price": 1,
       "stock": 15,
@@ -32,7 +32,7 @@
     },
     {
       "id": "PROD-0004",
-      "name": "Phone Charger",
+      "name": "Shoes",
       "description": "Fast charging USB-C wall adapter",
       "price": 1,
       "stock": 20,
@@ -42,7 +42,7 @@
     },
     {
       "id": "PROD-0005",
-      "name": "Laptop Stand",
+      "name": "Sneakers",
       "description": "Adjustable aluminum laptop stand",
       "price": 1,
       "stock": 12,
