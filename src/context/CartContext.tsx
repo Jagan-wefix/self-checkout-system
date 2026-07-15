@@ -1,4 +1,5 @@
 import { createContext, useContext, useState, ReactNode } from 'react';
+import { isProductPaid } from '../lib/firebaseService';
 
 interface Product {
   id: string;
@@ -27,7 +28,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
       return false;
     }
 
-    if (product.paid) {
+    if (isProductPaid(product.paid)) {
       return false;
     }
 

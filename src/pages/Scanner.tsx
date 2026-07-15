@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Html5Qrcode } from 'html5-qrcode';
 import { useCart } from '../context/CartContext';
 import { ArrowLeft, CheckCircle, XCircle, Loader2 } from 'lucide-react';
-import { products } from '../../server/products';
+import { fetchProductById, isProductPaid } from '../lib/firebaseService';
 
 interface ScannerProps {
   onBack: () => void;
@@ -72,16 +72,16 @@ export const Scanner = ({ onBack }: ScannerProps) => {
   setMessage(null);
 
   try {
-    // Find product from local hardcoded array
-    const product = products.find((p) => p.id === productId);
+    // Fetch product from Firebase
+    const product = await fetchProductById(productId);
 
     if (!product) {
-      setMessage({ type: 'error', text: 'Product not found' });
+      setMessage({ type: 'error', text: 'Product not found in database' });
       setLoading(false);
       return;
     }
 
-    if (product.paid) {
+    if (isProductPaid(product.paid)) {
       setMessage({ type: 'error', text: 'This product has already been paid for' });
       setLoading(false);
       return;
